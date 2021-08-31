@@ -1,0 +1,42 @@
+@import 'styles/_variables';
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid $secondary-border-color;
+  border-radius: 4px;
+
+  .contact-form__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .contact-form__input {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+
+  .contact-form__btn {
+    width: 150px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: $primary-text-color;
+    background-color: $secondary-bg-color;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function, box-shadow 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $accent;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
